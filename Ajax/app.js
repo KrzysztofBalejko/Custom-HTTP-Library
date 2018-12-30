@@ -26,10 +26,19 @@ const data = {
 }); */
 
 // Update Post
-http.put('https://jsonplaceholder.typicode.com/posts/30', data, function(err, put) {
+/*http.put('https://jsonplaceholder.typicode.com/posts/30', data, function(err, put) {
   if(err) {
     console.log(err);
   } else {
     console.log(put);
+  }
+}); */
+
+// Delete Post
+http.delete('https://jsonplaceholder.typicode.com/posts/1', function(err, response) {
+  if(err) {
+    console.log(err);
+  } else {
+    console.log(response);
   }
 });
